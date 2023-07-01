@@ -9,12 +9,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -22,8 +22,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -31,15 +29,41 @@ import java.util.Objects;
 class RunNewGame extends Application {
     //Variables of apps
     int count = 0;
-    int Max_Button_Color = 10;
+    int Max_Button_Color;
 
-    final int Row_Flex = 6;
-    final int Col_Flex = 6;
+     int Row_Flex;
+     int Col_Flex;
     private GridPane gridPane;
     private Text statusTextOfPuzzle;
     private Alert alert;
+    private TextInputDialog input;
     private MediaPlayer mediaPlayer;
     private static final String MUSIC_FILE = "E:/Programming/YinYangPuzzle/src/Nirvana - Something In The Way.mp3";
+
+
+    private void getRowAndCol(){
+        input = new TextInputDialog();
+        input.setTitle("input");
+        input.setContentText("Enter Row : ");
+        input.showAndWait().ifPresent(result ->{
+            Row_Flex = Integer.parseInt(result);
+        });
+        input.setTitle("input");
+        input.setContentText("Enter Col : ");
+        input.showAndWait().ifPresent(result ->{
+            Col_Flex = Integer.parseInt(result);
+        });
+
+    }
+
+    private void getMaxButtonColor(){
+        input = new TextInputDialog();
+        input.setTitle("input");
+        input.setContentText("Enter Max_Button_Color : ");
+        input.showAndWait().ifPresent(result ->{
+            Max_Button_Color = Integer.parseInt(result);
+        });
+    }
 
     //create primitive puzzle with gray background
     private void createPrimitivePuzzle() {
@@ -60,12 +84,14 @@ class RunNewGame extends Application {
             int colRandom = (int) (Math.random() * Col_Flex);
             int choiceRandomColor = (int) (Math.random() * 2);
             Button button = (Button) gridPane.getChildren().get(rowRandom * Row_Flex + colRandom);
-            if (choiceRandomColor == 1) {
-                button.setStyle("-fx-background-color: black");
-                count++;
-            } else {
-                button.setStyle("-fx-background-color: white");
-                count++;
+            if(button.getStyle().contains("gray")){
+                if (choiceRandomColor == 1) {
+                    button.setStyle("-fx-background-color: black");
+                    count++;
+                } else if(choiceRandomColor == 0) {
+                    button.setStyle("-fx-background-color: white");
+                    count++;
+                }
             }
             if (count == Max_Button_Color) {
                 break;
@@ -238,6 +264,8 @@ class RunNewGame extends Application {
         gridPane.setVgap(10);
         root.getChildren().add(gridPane);
         ///call method that we have need to
+        getRowAndCol();
+        getMaxButtonColor();
         createPrimitivePuzzle();
         //in here wh he has a delay for randomizing color 2 seconds
         Timeline timeline = new Timeline(new KeyFrame(javafx.util.Duration.seconds(2), event -> {
@@ -253,8 +281,8 @@ class RunNewGame extends Application {
         Image icon = new Image("yin-yang.png");
         GameCanvas.getIcons().add(icon);
         GameCanvas.setTitle("YinYang Puzzle");
-        GameCanvas.setWidth(490);
-        GameCanvas.setHeight(550);
+        GameCanvas.setWidth((Col_Flex*70)+75);//60
+        GameCanvas.setHeight((Row_Flex*70)+133);//130
         GameCanvas.setFullScreen(false);
         GameCanvas.setResizable(false);
         GameCanvas.setScene(scene);
