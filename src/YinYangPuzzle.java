@@ -1,5 +1,4 @@
 // Import Package and Libraries
-
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -15,7 +14,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -37,23 +35,17 @@ class RunNewGame extends Application {
     private Text statusTextOfPuzzle;
     private Alert alert;
     private TextInputDialog input;
-    private MediaPlayer mediaPlayer;
-    private static final String MUSIC_FILE = "E:/Programming/YinYangPuzzle/src/Nirvana - Something In The Way.mp3";
+
 
 
     private void getRowAndCol(){
         input = new TextInputDialog();
         input.setTitle("input");
         input.setContentText("Enter Row : ");
-        input.showAndWait().ifPresent(result ->{
-            Row_Flex = Integer.parseInt(result);
-        });
+        input.showAndWait().ifPresent(result -> Row_Flex = Integer.parseInt(result));
         input.setTitle("input");
         input.setContentText("Enter Col : ");
-        input.showAndWait().ifPresent(result ->{
-            Col_Flex = Integer.parseInt(result);
-        });
-
+        input.showAndWait().ifPresent(result -> Col_Flex = Integer.parseInt(result));
     }
 
     private void getMaxButtonColor(){
@@ -226,13 +218,6 @@ class RunNewGame extends Application {
             return false;
         }
     }
-
-//    private void music(){
-//        Media sound = new Media(new File(MUSIC_FILE).toURI().toString());
-//        mediaPlayer = new MediaPlayer(sound);
-//        mediaPlayer.play();
-//
-//    }
 
    // overriding start method that implements from application and there we are hera graphics and mainly of game
     @Override
