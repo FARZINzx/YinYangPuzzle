@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4da7aaa3-bb51-4a45-bcd5-f28d6e7e16b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YinYangPuzzle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nirvana - Something In The Way.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/YinYangPuzzle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/yin-yang.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RZN7WJBFCrOtBz1KfGv8C7Wh4a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Programming/YinYangPuzzle/src&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programming\YinYangPuzzle\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="YinYangPuzzle" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="YinYangPuzzle" />
+      <module name="YinYangPuzzle" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;E:\Software\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4da7aaa3-bb51-4a45-bcd5-f28d6e7e16b1" name="Changes" comment="" />
+      <created>1687453480118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687453480118</updated>
+      <workItem from="1687453480551" duration="12269000" />
+      <workItem from="1687518404155" duration="11797000" />
+      <workItem from="1687581184550" duration="24675000" />
+      <workItem from="1687641790240" duration="1371000" />
+      <workItem from="1687670896594" duration="1550000" />
+      <workItem from="1687676422187" duration="3757000" />
+      <workItem from="1687688438325" duration="8896000" />
+      <workItem from="1687710643778" duration="3962000" />
+      <workItem from="1687748947998" duration="26000" />
+      <workItem from="1687753113092" duration="37213000" />
+      <workItem from="1687841006458" duration="7071000" />
+      <workItem from="1687849052993" duration="4157000" />
+      <workItem from="1687863108112" duration="10829000" />
+      <workItem from="1687883363784" duration="22395000" />
+      <workItem from="1687909948712" duration="1384000" />
+      <workItem from="1687911498987" duration="121000" />
+      <workItem from="1687927107081" duration="2246000" />
+      <workItem from="1687964175146" duration="812000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/YinYangPuzzle$YinYangPuzzle.ic" NAME="YinYangPuzzle Coverage Results" MODIFIED="1687866892436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
